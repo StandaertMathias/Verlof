@@ -1,0 +1,45 @@
+﻿@model Verlof.Data.Aanvragen
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@inject UserManager<ApplicationUser> UserManager
+<h2> </h2>
+
+<h4>Aanvragen</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" asp-method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="NaamAanvrager" class="control-label"></label>
+                <input asp-for="NaamAanvrager" class="form-control" value="@UserManager.GetUserName(User)" readonly />
+                <span asp-validation-for="NaamAanvrager" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Datum" class="control-label"></label>
+                <input asp-for="Datum" class="form-control" />
+                <span asp-validation-for="Datum" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MotivatieAanvraag" class="control-label"></label>
+                <input asp-for="MotivatieAanvraag" class="form-control" />
+                <span asp-validation-for="MotivatieAanvraag" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

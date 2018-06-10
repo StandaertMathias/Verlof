@@ -1,0 +1,44 @@
+﻿@model Verlof.Data.Aanvragen
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+@inject UserManager<ApplicationUser> UserManager
+<h2>Edit</h2>
+
+<h4>Aanvragen</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" asp-method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="StatusAanvraag" class="control-label"></label>
+                <select asp-for="StatusAanvraag" class="form-control" >
+                    <option value="Goedgekeurd">Goedgekeurd</option>
+                    <option value="Afgekeurd">Afgekeurd</option>
+                </select>
+                <span asp-validation-for="StatusAanvraag" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NaamManager" class="control-label"></label>
+                <input asp-for="NaamManager" class="form-control" value="@UserManager.GetUserName(User)" readonly />
+                <span asp-validation-for="NaamManager" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MotivatieManager" class="control-label"></label>
+                <input asp-for="MotivatieManager" class="form-control" />
+                <span asp-validation-for="MotivatieManager" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

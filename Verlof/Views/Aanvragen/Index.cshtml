@@ -1,0 +1,66 @@
+﻿@model IEnumerable<Verlof.Data.Aanvragen>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Alle verlof aanvragen</h2>
+
+<p>
+    <a asp-action="Add">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NaamAanvrager)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Datum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MotivatieAanvraag)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StatusAanvraag)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NaamManager)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MotivatieManager)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NaamAanvrager)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Datum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MotivatieAanvraag)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StatusAanvraag)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NaamManager)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MotivatieManager)
+            </td>
+            @if (User.IsInRole("Manager"))
+            {
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { item.Id })
+                </td>
+            }
+        </tr>
+}
+    </tbody>
+</table>

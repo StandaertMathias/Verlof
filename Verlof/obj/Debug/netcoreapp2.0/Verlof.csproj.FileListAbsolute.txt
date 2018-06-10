@@ -1,0 +1,12 @@
+C:\Users\mathi_000\Documents\Howest\Semester4\NET_Technology\_examenVoorbereiding\week8_2\Verlof\Verlof\bin\Debug\netcoreapp2.0\Verlof.deps.json
+C:\Users\mathi_000\Documents\Howest\Semester4\NET_Technology\_examenVoorbereiding\week8_2\Verlof\Verlof\bin\Debug\netcoreapp2.0\Verlof.runtimeconfig.json
+C:\Users\mathi_000\Documents\Howest\Semester4\NET_Technology\_examenVoorbereiding\week8_2\Verlof\Verlof\bin\Debug\netcoreapp2.0\Verlof.runtimeconfig.dev.json
+C:\Users\mathi_000\Documents\Howest\Semester4\NET_Technology\_examenVoorbereiding\week8_2\Verlof\Verlof\bin\Debug\netcoreapp2.0\Verlof.dll
+C:\Users\mathi_000\Documents\Howest\Semester4\NET_Technology\_examenVoorbereiding\week8_2\Verlof\Verlof\bin\Debug\netcoreapp2.0\Verlof.pdb
+C:\Users\mathi_000\Documents\Howest\Semester4\NET_Technology\_examenVoorbereiding\week8_2\Verlof\Verlof\obj\Debug\netcoreapp2.0\Verlof.csprojAssemblyReference.cache
+C:\Users\mathi_000\Documents\Howest\Semester4\NET_Technology\_examenVoorbereiding\week8_2\Verlof\Verlof\obj\Debug\netcoreapp2.0\Verlof.csproj.CoreCompileInputs.cache
+C:\Users\mathi_000\Documents\Howest\Semester4\NET_Technology\_examenVoorbereiding\week8_2\Verlof\Verlof\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\mathi_000\Documents\Howest\Semester4\NET_Technology\_examenVoorbereiding\week8_2\Verlof\Verlof\obj\Debug\netcoreapp2.0\Verlof.AssemblyInfoInputs.cache
+C:\Users\mathi_000\Documents\Howest\Semester4\NET_Technology\_examenVoorbereiding\week8_2\Verlof\Verlof\obj\Debug\netcoreapp2.0\Verlof.AssemblyInfo.cs
+C:\Users\mathi_000\Documents\Howest\Semester4\NET_Technology\_examenVoorbereiding\week8_2\Verlof\Verlof\obj\Debug\netcoreapp2.0\Verlof.dll
+C:\Users\mathi_000\Documents\Howest\Semester4\NET_Technology\_examenVoorbereiding\week8_2\Verlof\Verlof\obj\Debug\netcoreapp2.0\Verlof.pdb
